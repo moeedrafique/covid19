@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <title>COVID-19 TRACKER</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!Bootstrp Code1>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!Scroll BAr Tables Script>
+    <script 
+
+src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+
+<script 
+
+src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<script 
+
+src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js">
+</script>
+<link rel="stylesheet" 
+
+href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" 
+
+href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
+
+
+    <nav class="navbar navbar-light" style="background-color: #76ff03;">
+
+    <a class="navbar-brand" href="#">CORONAVIRUS MONITORING  <strong>LIVE</strong></a>
+  </nav>
+    <br>
+    <br>
+    <div class="wrapper">
+        <h1 style="text-align: center;color: white;padding: 10px;"> COVID-19 LIVE TRACKER
+            <hr><span id="today" style="font-size: 15px;"></span>
+            <!--            <hr><span id="yesterday"></span>-->
+        </h1>
+        <br>
+      <div class="container">
+    <h1>Stay Home Stay
+      <span class="txt-type" data-wait="3000" data-words='["Safe", "Healthy", "For Pakistan", "For World"]'></span>
+    </h1>
+    <h2>Maintain Social Distance</h2>
+  </div>
+
+        <div class="statistic">
+
+            <div class="total_case_box">
+                <h2>Total Cases In Pakistan</h2>
+                <p id="total_cases" style="font-weight: bold;"></p>
+            </div><br>
+
+            <div class="box_wrapper">
+                <div class="box">
+                    <h2>Total Death</h2>
+                    <p id="total_death"> </p>
+                </div>
+
+                <div class="box" style="background-color:forestgreen;color: white;">
+                    <h2>Total Recovery</h2>
+                    <p id="total_recovered"> </p>
+                </div>
+
+                <div class="box">
+                    <h2>New case</h2>
+                    <p id="new_cases"> </p>
+                </div>
+
+                <div class="box" style="background-color: red;color: white;">
+                    <h2>New Death</h2>
+                    <p id="new_deaths"> </p>
+                    </div>
+                </div>
+ 
+            <iframe title="" aria-label="Pakistan districts (2019) Symbol map" id="datawrapper-chart-WJHCS" src="//datawrapper.dwcdn.net/WJHCS/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+</script>
+                
+
+               
+                
+<div class="container--wrap">
+   
+          <p style="color: #444; font-size: 30px; text-align: center; padding-top: 15px; font-weight: bolder; margin-bottom: 0;">
+            Quick Facts From World
+          
+    <table id="countries_stat" class="display" style="width:100%">
+            <thead>
+                    <tr>
+                    
+                        <th>Country</th>
+                        <th>Cases</th>
+                        <th>Deaths</th>
+                        <th>serious critical</th>
+                        <th>total recovered</th>
+                        <th>ActiveCases</th>
+                        <th>New Death</th>
+
+                 </tr>
+                 </thead>
+
+                </table>
+</div>
+</div>
+    <script src='js/api.js'></script>
+    <script>
+        var d = new Date();
+        document.getElementById("today").innerHTML = d;
+
+    </script>
+     </div>
+    
+      
+
+
+
+
+
+
+
+
+</html>
