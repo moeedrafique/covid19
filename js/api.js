@@ -1,6 +1,6 @@
 var myHeaders = new Headers();
 myHeaders.append("x-rapidapi-host", "coronavirus-monitor.p.rapidapi.com");
-myHeaders.append("x-rapidapi-key", "552f7ee0cbmshafea132ca18cd07p182083jsn8389b4b62718");
+myHeaders.append("x-rapidapi-key", "f2d8ee4343mshce1a3cb5c029551p1250e7jsn1f7970559d8a);
 
 var requestOptions = {
   method: 'GET',
